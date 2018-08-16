@@ -1,0 +1,31 @@
+{
+  "pattern":[
+    "!prefix",
+    "!root",
+    "!suffix"
+  ],
+  "prefix":[
+    "Amble",
+    "Brook",
+    "Grey",
+    "Brown",
+    "Green",
+    "White",
+    "Wind",
+    "Wood"
+  ],
+  "root":[
+    "stone",
+    "bridge",
+    "ridge",
+    "bend",
+    "wood",
+    "fork",
+    "bow"
+  ],
+  "suffix":[
+    " Common",
+    "",
+    " Village"
+  ]
+}
