@@ -17,7 +17,8 @@ def unpack_pattern(pattern, schema):
     for pat in pat_list:
         inst, tag = pat.split("#")
         if "$" in inst:
-            output = output + tag
+            tag_out = tag.replace("_", " ")
+            output = output + tag_out
             continue
         corpus = schema[tag]
         if isinstance(corpus, str):

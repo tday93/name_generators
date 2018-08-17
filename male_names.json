@@ -1,0 +1,57 @@
+{
+  "first":"*#given_names",
+  "given_names":[
+    "oliver",
+    "john",
+    "james",
+    "jonathan",
+    "jeremiah",
+    "stephen",
+    "robert",
+    "matthew",
+    "mark",
+    "luke",
+    "heston",
+    "brandon",
+    "dale",
+    "mike",
+    "christopher",
+    "aaron",
+    "allen",
+    "glen",
+    "paul",
+    "saul"
+  ],
+  "last":[
+    "*^#last_prefix *^#last_root",
+    "*^#last_root",
+    "*^#last_root *#last_suffix",
+    "*^#last_prefix *^#last_root *#last_suffix"
+  ],
+  "last_prefix":[
+    "mc",
+    "o'",
+    "von"
+  ],
+  "last_root":[
+    "smith",
+    "cooper",
+    "wood",
+    "wright",
+    "brown",
+    "green",
+    "white",
+    "hunter",
+    "ford",
+    "glenn",
+    "john",
+    "stephen",
+    "barrow"
+  ],
+  "last_suffix":[
+    "son",
+    "sorn",
+    "sen"
+  ],
+  "pattern":"!^#first $#_ !#last"
+}
