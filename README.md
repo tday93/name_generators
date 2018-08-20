@@ -5,7 +5,7 @@ Generates names based on a set of corpuses and a pattern.
 
 
 
-##Pattern Definitions
+## Pattern Definitions
 
 Each pattern consists of multiple space seperated pieces. Each piece has two parts, an
 instruction section, and a tag. The instruction section informs what the tag represents,
@@ -16,14 +16,14 @@ the tag. If a teg references a list, an item will be chose at random. If tag ref
 a string, the string will be given directly.
 
 
-###Instruction Definitions
+### Instruction Definitions
 
-####Execution Instructions
+#### Execution Instructions
 \* = Tag will reference plaintext of corpus of plaintext.
 ! = Tag references either pattern or corpus of patterns. 
 $ = Tag itself is plaintext. 
 
-####Simple Instructions
+#### Simple Instructions
 ^ = Capitalize Result
 \+ = AllCaps Result
 \- = lowercase result
