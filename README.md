@@ -20,10 +20,16 @@ a string, the string will be given directly.
 
 #### Execution Instructions
 \* = Tag will reference plaintext of corpus of plaintext.
+
 ! = Tag references either pattern or corpus of patterns. 
+
 $ = Tag itself is plaintext. 
+
+& = Tag references another schema file
 
 #### Simple Instructions
 ^ = Capitalize Result
+
 \+ = AllCaps Result
+
 \- = lowercase result

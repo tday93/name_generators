@@ -22,36 +22,5 @@
     "paul",
     "saul"
   ],
-  "last":[
-    "*^#last_prefix *^#last_root",
-    "*^#last_root",
-    "*^#last_root *#last_suffix",
-    "*^#last_prefix *^#last_root *#last_suffix"
-  ],
-  "last_prefix":[
-    "mc",
-    "o'",
-    "von"
-  ],
-  "last_root":[
-    "smith",
-    "cooper",
-    "wood",
-    "wright",
-    "brown",
-    "green",
-    "white",
-    "hunter",
-    "ford",
-    "glenn",
-    "john",
-    "stephen",
-    "barrow"
-  ],
-  "last_suffix":[
-    "son",
-    "sorn",
-    "sen"
-  ],
-  "pattern":"!^#first $#_ !#last"
+  "pattern":"!^#first $#_ &#last_names.json"
 }
