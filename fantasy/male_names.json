@@ -1,0 +1,26 @@
+{
+  "first":"*#given_names",
+  "given_names":[
+    "oliver",
+    "john",
+    "james",
+    "jonathan",
+    "jeremiah",
+    "stephen",
+    "robert",
+    "matthew",
+    "mark",
+    "luke",
+    "heston",
+    "brandon",
+    "dale",
+    "mike",
+    "christopher",
+    "aaron",
+    "allen",
+    "glen",
+    "paul",
+    "saul"
+  ],
+  "pattern":"!^#first $#_ &#last_names.json"
+}
