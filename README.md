@@ -12,7 +12,7 @@ instruction section, and a tag. The instruction section informs what the tag rep
 and how it should be handled. The tag is an identifier of either a corpus, or a
 reference to another pattern defined by the schema. The two sections of the piece are
 delimited by a "#" mark. Everything to the right of the hash mark is considered part of
-the tag. If a teg references a list, an item will be chose at random. If tag references
+the tag. If a tag references a list, an item will be chose at random. If tag references
 a string, the string will be given directly.
 
 
@@ -26,6 +26,8 @@ a string, the string will be given directly.
 $ = Tag itself is plaintext. 
 
 & = Tag references another schema file
+
+@ = Tag defines a variable
 
 #### Simple Instructions
 ^ = Capitalize Result

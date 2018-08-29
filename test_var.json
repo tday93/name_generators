@@ -1,0 +1,9 @@
+{
+  "pattern": "@*#one:var1 %#one %#one %#one",
+  "var1": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+  ]
+}

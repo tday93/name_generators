@@ -1,0 +1,3 @@
+{
+  "pattern": "&^#given_name_female.json $#_ &^#family_name.json"
+}

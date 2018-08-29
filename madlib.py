@@ -24,6 +24,7 @@ class Madlib():
         self.base_file = base_file
         self.directory = directory
         self.schema, self.pattern = self.load_schema(self.base_file)
+        self.archive = {}
 
     def generate(self, n):
         output = []
@@ -43,10 +44,17 @@ class Madlib():
                 tag_out = tag.replace("_", " ")
                 output = output + tag_out
                 continue
+
+            # variable tag handling
+            if "@" in inst:
+                k, tag = tag.split(":")
+
             # load external schema
             if "&" in inst:
                 sub_schema, sub_pattern = self.load_schema(tag)
                 result = self.unpack_pattern(sub_pattern, sub_schema)
+            elif "%" in inst:
+                result = self.archive[tag]
             # unpack tag if not external schema or plaintext
             else:
                 corpus = schema[tag]
@@ -70,6 +78,9 @@ class Madlib():
             if "-" in inst:
                 result = result.lower()
             output = output + result
+
+            if "@" in inst:
+                self.archive[k] = output
         return output
 
     def load_schema(self, filename):
