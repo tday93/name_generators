@@ -1,0 +1,74 @@
+{
+  "pattern": "!#sub_pats",
+  "sub_pats": [ 
+    "+*#type $#_ +!#noun",
+    "+!#adj $#_ +!#noun",
+    "+!#noun $#_ +!#adj",
+    "+!#noun $#_ +!#noun"
+  ],
+  "adj":[
+    "*#color",
+    "*#misc_adj"
+  ],
+  "color":[
+    "blue",
+    "black",
+    "green",
+    "red", 
+    "white",
+    "midnight"
+  ],
+  "misc_adj":[
+    "extant",
+    "exigent",
+    "final"
+  ],
+  "noun": [
+    "*#location",
+    "*#person",
+    "*#animal",
+    "*#myth"
+  ],
+  "location":[
+    "alabama",
+    "alaska",
+    "arizona",
+    "arkansas",
+    "california",
+    "colorado",
+    "conneticut",
+    "delaware",
+    "florida",
+    "georgia",
+    "hawaii",
+    "idaho",
+    "iowa",
+    "indiana",
+    "kentucky",
+    "louisiana",
+    "maine",
+    "maryland",
+    "massachusetts"
+  ],
+  "person":[
+    "rasputin",
+    "patton"
+  ],
+  "animal": [
+    "hawk",
+    "swordfish"
+  ],
+  "myth": [
+    "gorgon",
+    "cristos",
+    "godhead",
+    "achilles",
+    "thor",
+    "loki"
+  ],
+  "type": [
+    "operation",
+    "case",
+    "contingency"
+  ]
+}
